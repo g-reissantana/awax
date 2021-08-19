@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:#b78c59;
+    --grey: #adadad;
+    --grey-dark: #282828;
+    --black: #000000;
+    --white: #ffffff;
+    --white-medium: #f7f7f7;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+body, input, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Menu */
+header {
+    height: 9rem;
+
+    background-color: var(--black);
+}
+
+.header {
+    max-width: 115rem;
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: transparent;
+}
+
+/* Logo */
+.header .logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3rem;
+    background-color: var(--primary-color);
+}
+
+/* Menu de navegação */
+.header .menu {
+    height: 100%;
+}
+.menu nav ul{
+    display: flex;
+    gap: 2rem;
+
+    text-transform: uppercase;
+
+    list-style: none;
+}
+.menu nav a{
+    height: 9rem;
+    
+    display: flex;
+    align-items: center;
+
+    color: var(--white);
+    font-weight: 500;
+
+    border-bottom: solid 5px transparent;
+    
+    transition: .3s;
+}
+.menu nav a:hover,
+.menu nav a.active {
+    color: #E5E5E5;
+    border-bottom: solid 5px var(--primary-color);
+}
+
+/* Banner and Sliders*/
+.banner {
+    width: 100vw;
+    height: calc(100vh - 9rem);
+
+    background-image: url('/assets/images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+.banner .sliders {
+    width: calc(4 * 100vw);
+    height: 100%;
+    /* display: flex; -> Ao invés de utilizar o inline-block no .banner .slide*/
+    margin-left: 00vw; 
+}
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+
+    display: inline-block;  
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Conteúdo do slide */
+.banner .slidearea {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: var(--white);
+    text-transform: uppercase;
+
+    text-align: center;
+}
+.banner .slidearea h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.banner .slidearea h1 span {
+    color: var(--primary-color);
+}
+.banner .slidearea h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.banner .slidearea a {
+    height: 4.5rem;
+    width: 20rem;
+
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    border-radius: 2rem;
+}
+.banner .slidearea a:hover {
+    filter: brightness(.9);
+}
+
+/* Slider pointers */
+.banner .slider-pointers {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    position: absolute;
+    bottom: 5rem;
+}
+
+.banner .pointer {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border-radius: 1rem;
+
+    border: 2.5px solid var(--primary-color);
+
+    cursor: pointer;
+}
+.banner .pointer:hover {
+    filter: brightness(.85);
+}
+.banner .pointer.active {
+    background-color: var(--primary-color);
+}
