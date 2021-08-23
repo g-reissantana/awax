@@ -78,25 +78,31 @@
 ---
 # Aula 13 (services)
 
-   [] Divisão geral
-   [] Boxes (retângulos iguais)
+   [X] Divisão geral
+   [X] Boxes (retângulos iguais)
       -> Conteúdo
-         [] Ícone - Imagem
-         [] Título
-         [] Descrição
-   [] Bordas
+         [X] Ícone - Imagem
+         [X] Título
+         [X] Descrição
+   [X] Bordas
 ---
 # Aula 14,15,16 (projects)
 
-   [] Divisão geral
+   [X] Divisão geral
    [] Conteúdo
       -> Filters
-         [] Menu
-         [] Lista de itens
-         [] Alinhamentos
-         [] Border
+         [X] Menu
+         [X] Lista de itens
+         [X] Alinhamentos
+         [X] Border
       -> Photos
-         [] ...
+         [] Criar área das fotos responsiva
+         [] Photo
+            -> Conteúdo
+               [] Área da foto
+               [] Imagem
+               [] Informações da foto
+         [] 
       -> Button
          [] ...
 ---
