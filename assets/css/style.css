@@ -58,6 +58,13 @@ header {
     height: 5rem;
     border-radius: 3rem;
     background-color: var(--primary-color);
+    /* Temporário */
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 /* Menu de navegação */
@@ -191,3 +198,103 @@ header {
 .banner .pointer.active {
     background-color: var(--primary-color);
 }
+
+/* SECTION */
+.default {
+    padding: 2rem;
+}
+
+.default .section-title,
+.default .section-desc {
+    font-weight: 700;
+    
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.default .section-title {
+
+    font-size: 2.7rem;
+}
+.default .section-desc {
+    font-size: 1.3rem;
+
+    color: var(--grey);
+    margin-top: .8rem;
+    margin-bottom: 4rem;
+}
+
+.default .section-body {
+    max-width: 115rem;
+    margin: auto;
+}
+
+/* TEMAS */
+.default.dark {
+    background-color: var(--black);
+}
+.default.default.dark .section-title {
+    color: var(--white);
+}
+
+.default.light {
+    background-color: var(--white-medium);
+}
+.default.light .section-title {
+    color: var(--black);
+}
+
+
+
+
+
+
+/* ÁREAS ESPECIAIS */
+
+.section-aboutus {
+    display: flex;
+}
+.section-aboutus .left {
+    flex: 1;
+    line-height: 2.9rem;
+}
+
+.section-aboutus .right {
+    padding: 0 1.5rem;
+    width: 48rem;
+}
+.section-aboutus .right img {
+    width: 100%;
+    height: auto;
+
+    border-radius: .5rem;
+
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Global */
+.button {
+    height: 4.5rem;
+    width: 20rem;
+
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    border-radius: 2rem;
+}
+.button:hover{
+    filter: brightness(.9);
+}
+
+
+
+
