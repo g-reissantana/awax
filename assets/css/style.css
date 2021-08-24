@@ -308,6 +308,48 @@ header {
 
     color: var(--grey);
 }
+/* Projects */
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-projects--filters {
+    background-color: #e7e7e7;
+    border: solid 1px var(--grey);
+    border-radius: 2.5rem;
+
+    padding: 0 3rem;
+
+    display: inline-block;
+}
+
+.section-projects--filters li {
+    cursor: pointer;
+
+    display: inline-block;
+
+    padding: 0 1rem;
+    font-size: 1.5rem;
+
+    border-left: solid 1px var(--grey);
+
+    text-transform: uppercase;
+
+}
+.section-projects--filters li:first-child {
+    border-left: none;
+}
+.section-projects--filters li span {
+    display: inline-block;
+    padding: 1.6rem;
+    border-bottom: solid 5px #e7e7e7;
+    
+}
+.section-projects--filters li span:hover,
+.section-projects--filters li span.active {
+    border-bottom: solid 5px var(--primary-color);
+}
 
 
 

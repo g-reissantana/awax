@@ -93,7 +93,6 @@
       -> Filters
          [X] Menu
          [X] Lista de itens
-         [X] Alinhamentos
          [X] Border
       -> Photos
          [] Criar área das fotos responsiva
