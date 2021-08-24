@@ -98,8 +98,8 @@
          [] Criar área das fotos responsiva
          [] Photo
             -> Conteúdo
-               [] Área da foto
-               [] Imagem
+               [X] Área da foto
+               [X] Imagem
                [] Informações da foto
          [] 
       -> Button
