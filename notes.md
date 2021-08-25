@@ -95,15 +95,14 @@
          [X] Lista de itens
          [X] Border
       -> Photos
-         [] Criar área das fotos responsiva
-         [] Photo
+         [X] Criar área das fotos responsiva
+         [X] Photo
             -> Conteúdo
                [X] Área da foto
                [X] Imagem
-               [] Informações da foto
-         [] 
+               [X] Informações da foto
       -> Button
-         [] ...
+         [X] clase
 ---
 # Aula 17,18,19 (our team)
 
