@@ -108,3 +108,6 @@
 
    [] ...
 ---
+
+
+# Ajeitar bug na seção happy us, responsividade
