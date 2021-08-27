@@ -84,6 +84,9 @@ header {
 .header .menu {
     height: 100%;
 }
+nav {
+    transition: all 5s;
+}
 .menu nav ul{
     display: flex;
     gap: 1rem;
@@ -912,4 +915,8 @@ form {
 }
 .bg-grey {
     background: var(--grey-light) !important;
+}
+
+.block {
+    display: block;
 }

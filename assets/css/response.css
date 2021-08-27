@@ -198,4 +198,7 @@
     section.bg-team {
         display: none;
     }
+    nav ul li:nth-child(5) {
+        display: none;
+    }
 }
