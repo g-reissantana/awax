@@ -71,15 +71,24 @@ header {
     justify-content: center;
     font-size: 1.4rem;
     font-weight: 500;
+
+    margin-left: 5rem;
+
 }
 
 /* Menu de navegação */
+.menu-opener {
+    cursor: pointer;
+    display: none;
+}
 .header .menu {
     height: 100%;
 }
 .menu nav ul{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+
+    margin-right: 5rem;
 
     text-transform: uppercase;
 }
@@ -90,6 +99,7 @@ header {
     align-items: center;
 
     color: var(--white);
+    font-size: 1.3rem;
     font-weight: 500;
 
     border-bottom: solid 5px transparent;
@@ -143,15 +153,15 @@ header {
     text-align: center;
 }
 .banner .slidearea h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .banner .slidearea h1 span {
     color: var(--primary-color);
 }
 .banner .slidearea h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
 }
 .banner .slidearea a {
@@ -281,8 +291,7 @@ header {
 /* Services */
 .section-services {
     display: flex;
-    flex: 1;
-
+    flex-wrap: wrap;
 }
 .section-services .service {
     color: var(--white);
@@ -536,77 +545,6 @@ header {
 .section-team--pointer.active {
     background-color: var(--primary-color);
 }
-
-.section-happyclients {
-    margin: auto;
-    max-width: 90rem;
-
-    overflow: hidden;
-}
-.section-happyclients--sliders {
-    width: 360rem;
-
-    display: flex;
-    margin-left: -0rem; /* -> Propriedade que faz a troca do slide */
-}
-.section-happyclients--slide {
-    width: 90rem;
-
-    display: flex;
-}
-.section-happyclients--area {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    padding-top: 3rem;
-}
-.section-happyclients--name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-
-    margin: 2rem 0 3rem;
-}
-.section-happyclients--desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-
-    line-height: 3rem;
-    text-align: center;
-
-    color: var(--grey);
-}
-
-.section-happyclients--pointers {
-    margin-top: 1rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-}
-.section-happyclients--pointer {
-    width: 1.5rem;
-    height: 1.5rem;
-
-    border-radius: 1rem;
-
-    border: 2.5px solid var(--primary-color);
-
-    cursor: pointer;
-}
-.section-happyclients--pointer:hover {
-    filter: brightness(0.8);
-}
-.section-happyclients--pointer.active {
-    background-color: var(--primary-color);
-}
 /* Enterprises */
 .section-enterprises {
     border-top: 2px solid var(--grey);
@@ -816,13 +754,20 @@ form {
     display: flex;
     flex-direction: column;
 
-    padding: 5rem 3rem;
+    margin: 5rem 3rem;
+    padding: 4rem;
 
     color: var(--grey);
     background-color: var(--white);
 }
 .section-map--info-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 1.5rem;
+}
+.section-map--info-item:last-child {
+    margin-bottom: 0;
+
 }
 .section-map--icon {
     width: 3rem;

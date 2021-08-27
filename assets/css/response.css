@@ -1,0 +1,201 @@
+@media(max-width: 992px) {
+    .menu-opener {
+        display: block;
+        margin: 3.5rem 5rem;
+    }
+    nav {
+        display: none;
+        z-index: 99;
+
+        background-color: rgba(0, 0, 0, .9);
+        position: absolute;
+        top: 8.8rem;
+        right: 0;
+        bottom: 0;
+
+        width: 70vw;
+    }
+    .menu nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    .menu nav a {
+        height: 4.3rem;
+
+        border-bottom: none;
+
+        margin-left: 5rem;
+
+        font-size: 1.4rem;
+        font-weight: bold;
+
+    }
+    .menu nav a:hover {
+        border-bottom: none;
+    }
+    .menu nav a.active {
+        border-bottom: none;
+        color: var(--primary-color);
+    }
+
+
+
+    .section-aboutus {
+        flex-direction: column;
+    }
+    .section-aboutus .left {
+        margin: 0 3rem;
+
+        
+    }
+    .section-aboutus .right {
+        margin: auto;
+        width: 80%;
+        max-width: 550px;
+        margin-top: 3rem;
+    }
+
+    .section-services .service {
+        margin-bottom: 2rem;
+
+        min-width: 50%;
+
+        border-left: none;
+        border-right: none;
+    }
+    .section-services .service:first-child {
+        border-left: none;
+    }
+    
+    
+
+    .section-team {
+        max-width: 58rem;
+    }
+
+    .section-map--info {
+        margin: 0rem 3rem 15rem;
+        width: auto;
+    }
+
+    .section-footer {
+        flex-direction: column;
+        padding: 1rem 3rem;
+    }
+    .section-footer--box-social {
+        margin-bottom: 1.5rem;
+    }
+    .section-footer--box-form {
+        width: 80%;
+        margin: auto;
+    }
+    .section-footer--box-form form {
+        margin: 6rem 0;
+    }
+}
+
+@media(max-width: 700px) {
+    nav {
+
+        background-color: rgba(0, 0, 0, .9);
+        position: absolute;
+        top: 8.8rem;
+        right: 0;
+        bottom: 0;
+
+        width: 70vw;
+    }
+    .menu nav ul {
+        flex-direction: column;
+    }
+    .menu nav a {
+        height: 4rem;
+
+        border-bottom: none;
+
+        margin-left: 5rem;
+
+        font-size: 1.3rem;
+        font-weight: bold;
+
+    }
+    .menu nav a:hover {
+        border-bottom: none;
+    }
+    .menu nav a.active {
+        border-bottom: none;
+        color: var(--primary-color);
+    }
+
+
+
+    .section-team {
+        max-width: 28rem;
+    }
+    
+    .section-enterprises--body {
+        flex-wrap: wrap;
+    }
+    .section-enterprises--enterprise {
+        min-width: 33.3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .section-somefacts {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 576px) {
+    .section-map--info {
+        margin: 0rem 2rem 15rem;
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+    .section-services .service {
+        min-width: 100%;
+    }
+
+    .section-footer--box-form {
+        width: 100%;
+    }
+    .section-footer--box-form form {
+        width: 100%;
+    }
+    .section-footer--box-form form input {
+        width: 80%;
+    }
+}
+
+@media(max-width: 575px) {
+    .section-projects--filters {
+        margin: auto;
+        min-width: 80%;
+    }
+    .section-projects--filters ul{
+        display: flex;
+        flex-direction: column;
+
+        font-weight: bold;
+    }
+    .section-projects--filters ul li:first-child {
+        border-left: 1px solid var(--grey);
+    }
+    .section-projects--filters ul li span:hover {
+        border-bottom: none;
+        color: var(--primary-color);
+    }
+    .section-projects--filters ul li span.active {
+        border-bottom: none;
+        color: var(--primary-color);
+    }
+}
+
+@media(max-width: 380px) {
+    section.bg-team {
+        display: none;
+    }
+}
